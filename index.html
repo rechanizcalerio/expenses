@@ -14,12 +14,15 @@
     border-width: 10px;
     border-style: solid;
     border-radius: 150px;
-  }
+    }
+    .oculto {
+        display: none;
+    }
     </style>
 </head>
 <body>
-    <div id="principal" class="container-fluid">
-        <div class="text-center">
+    <div id="menu" class="container-fluid">
+        <div id="principal" class="text-center">
             <img class="wallet circular" src="OIUGYX0.jpg">
             <br>
             <label>Cual es tu ingreso mensual?</label>
@@ -32,11 +35,11 @@
             <div class="row">
                 <div class="col align-self-center">
                     <ul class="list-group">
-                        <li class="list-group-item">Gastos Diarios:<span id="daily-expenses"> </span></li>                      
-                        <li id="alquiler" class="list-group-item list-group-item-primary">Alquiler </li>
-                        <li id="ocio" class="list-group-item list-group-item-success">Ocio </li>
-                        <li id="alimentacion" class="list-group-item list-group-item-warning">Alimentación </li>
-                        <li id="ahorro" class="list-group-item list-group-item-info">Ahorro </li>
+                        <li class="list-group-item">Gastos Diarios:<br><span id="daily-expenses"></span></li>                      
+                        <li class="list-group-item list-group-item-primary">Alquiler:<br><span id="alquiler"></span></li>
+                        <li class="list-group-item list-group-item-success">Ocio:<br><span id="ocio"></span></li>
+                        <li class="list-group-item list-group-item-warning">Alimentación:<br><span id="alimentacion"></span></li>
+                        <li class="list-group-item list-group-item-info">Ahorro:<br><span id="ahorro"></span></li>
                       </ul>
                        <!--  <div class="col align-self-center">
                         Alquiler
@@ -57,17 +60,17 @@
                 </div>
                 <div class="col">
                     <ul class="list-group">
-                        <li id="splurge" class="list-group-item">Derroche:<span id="splurge"> </span></li>   
+                        <li id="splurge" class="list-group-item">Derroche:<br><span id="splurge"></span></li>   
                     </ul>
                 </div>
                 <div class="col">
                     <ul class="list-group">
-                        <li id="smile" class="list-group-item">Sonrisas:<span id="smile"> </span></li> 
+                        <li id="smile" class="list-group-item">Sonrisas:<br><span id="smile"></span></li> 
                     </ul>
                 </div>
                 <div class="col">
                     <ul class="list-group">
-                        <li id="fire-ext" class="list-group-item">Emergencias:<span id="daily-expenses"> </span></li>   
+                        <li id="fire-ext" class="list-group-item">Emergencias:<br><span id="fire-ext"></span></li>   
                     </ul>   
                 </div>
             </div>            
