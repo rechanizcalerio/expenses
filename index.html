@@ -25,14 +25,19 @@
             <br>
             <input id="sueldo-neto" type="number"/>
             <br>
-            <button type="submit">Calcular</button>
+            <button type="submit" class="btn btn-success">Calcular</button>
         </div>
         <div class="container">
             <div class="row">
                 <div class="col align-self-center">
-                    Gastos Diarios
-                    <div id="daily-expenses"></div>
-                    <div class="col align-self-center">
+                    <ul class="list-group">
+                        <li class="list-group-item">Gastos Diarios:<span id="daily-expenses"> </span></li>                      
+                        <li id="alquiler" class="list-group-item list-group-item-primary">Alquiler </li>
+                        <li id="ocio" class="list-group-item list-group-item-success">Ocio </li>
+                        <li id="alimentacion" class="list-group-item list-group-item-warning">Alimentación </li>
+                        <li id="ahorro" class="list-group-item list-group-item-info">Ahorro </li>
+                      </ul>
+                       <!--  <div class="col align-self-center">
                         Alquiler
                         <div id="alquiler"></div>
                     </div>
@@ -47,19 +52,22 @@
                     <div class="col align-self-center">
                         Ahorro
                         <div id="ahorro"></div>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="col">
-                    Derroche
-                    <div id="splurge"></div>
+                    <ul class="list-group">
+                        <li id="splurge" class="list-group-item">Derroche:<span id="splurge"> </span></li>   
+                    </ul>
                 </div>
                 <div class="col">
-                    Sonrisas
-                    <div id="smile"></div>
+                    <ul class="list-group">
+                        <li id="smile" class="list-group-item">Sonrisas:<span id="smile"> </span></li> 
+                    </ul>
                 </div>
                 <div class="col">
-                    Emergencias
-                    <div id="fire-ext"></div>
+                    <ul class="list-group">
+                        <li id="fire-ext" class="list-group-item">Emergencias:<span id="daily-expenses"> </span></li>   
+                    </ul>   
                 </div>
             </div>            
         </div>
