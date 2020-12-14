@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Expenses</title>
+    <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.min.css">
+    <style type="text/css">
+    .wallet {
+        width: 300px;
+    }
+    .circular {
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 150px;
+  }
+    </style>
+</head>
+<body>
+    <div id="principal" class="container-fluid">
+        <div class="text-center">
+            <img class="wallet circular" src="OIUGYX0.jpg">
+            <br>
+            <label>Cual es tu ingreso mensual?</label>
+            <br>
+            <input id="sueldo-neto" type="number"/>
+            <br>
+            <button type="submit">Calcular</button>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col align-self-center">
+                    Gastos Diarios
+                    <div id="daily-expenses"></div>
+                    <div class="col align-self-center">
+                        Alquiler
+                        <div id="alquiler"></div>
+                    </div>
+                    <div class="col align-self-center">
+                        Ocio
+                        <div id="ocio"></div>
+                    </div>
+                    <div class="col align-self-center">
+                        Alimentación
+                        <div id="alimentacion"></div>
+                    </div>
+                    <div class="col align-self-center">
+                        Ahorro
+                        <div id="ahorro"></div>
+                    </div>
+                </div>
+                <div class="col">
+                    Derroche
+                    <div id="splurge"></div>
+                </div>
+                <div class="col">
+                    Sonrisas
+                    <div id="smile"></div>
+                </div>
+                <div class="col">
+                    Emergencias
+                    <div id="fire-ext"></div>
+                </div>
+            </div>            
+        </div>
+    </div>
+<script scr="node_modules\bootstrap\dist\css\bootstrap-grid.css"></script>
+<script type="text/javascript" src="gastos.js"></script>
+</body>
+</html>
