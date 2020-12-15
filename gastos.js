@@ -2,7 +2,8 @@ const $boton = document.querySelector("[type=submit]");
 const $menu = document.querySelector("#principal")
 $boton.onclick = function (){
     //$menu.classList.add("oculto");
-    const $sueldoNeto = document.querySelector("#sueldo-neto").value;
+    $menu.reset;
+    let $sueldoNeto = document.querySelector("#sueldo-neto").value;
     const $daily = document.querySelector("#daily-expenses");
     const $splurge = document.querySelector("#splurge");
     const $smile = document.querySelector("#smile");
