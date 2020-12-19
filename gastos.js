@@ -1,17 +1,24 @@
 const $boton = document.querySelector("[type=submit]");
 const $menu = document.querySelector("#principal")
+const $form = document.querySelector("#calculos");
+let $daily = document.querySelector("#daily-expenses");
+let $splurge = document.querySelector("#splurge");
+let $smile = document.querySelector("#smile");
+let $fireExt = document.querySelector("#fire-ext");
+let $alquiler= document.querySelector("#alquiler");
+let $ocio= document.querySelector("#ocio");
+let $alimentacion= document.querySelector("#alimentacion");
+let $ahorro= document.querySelector("#ahorro");
 $boton.onclick = function (){
-    //$menu.classList.add("oculto");
-    $menu.reset;
     let $sueldoNeto = document.querySelector("#sueldo-neto").value;
-    const $daily = document.querySelector("#daily-expenses");
-    const $splurge = document.querySelector("#splurge");
-    const $smile = document.querySelector("#smile");
-    const $fireExt = document.querySelector("#fire-ext");
-    const $alquiler= document.querySelector("#alquiler");
-    const $ocio= document.querySelector("#ocio");
-    const $alimentacion= document.querySelector("#alimentacion");
-    const $ahorro= document.querySelector("#ahorro");
+    $daily.textContent="";
+    $splurge.textContent="";
+    $smile.textContent="";
+    $fireExt.textContent="";
+    $alquiler.textContent="";
+    $ocio.textContent="";
+    $alimentacion.textContent="";
+    $ahorro.textContent=""; 
     let calculo1 = document.createTextNode(`$${($sueldoNeto*0.6).toFixed(2)}`);
     $daily.appendChild(calculo1);
     let calculo2 = document.createTextNode(`$${($sueldoNeto*0.1).toFixed(2)}`);

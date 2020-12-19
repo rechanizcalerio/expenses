@@ -35,37 +35,76 @@
             <br>
             <button type="submit" class="btn btn-success">Calcular</button>
         </form>
+        <form id="calculos" type="submit">
         <div class="container">
             <div class="row">
                 <div class="col align-self-center">
-                    <ul class="list-group">
+                    <div class="card text-white bg-success mb-3" style="width: 15rem; height: 18rem;">
+                        <div class="card-body">
+                          <h5 class="card-title">Gastos Diarios</h5>
+                        <span id="daily-expenses" class="card-title"></span>
+                          <p class="card-text">Es el %60 de tus ingresos. Este dinero se utiliza para pagar el alquiler, gastos en el supermercado, etc.</p>
+                          <a href="#" class="btn btn-primary" style="margin-top: 50px">Go somewhere</a>
+                        </div>
+                      </div>
+                   <!--  <ul class="list-group">
                         <li class="list-group-item">Gastos Diarios:<br><span id="daily-expenses"></span></li>
+                        <div id="sugerencia" class="oculto">
                         <li class="list-group-item list-group-item-primary">Alquiler:<br><span id="alquiler"></span>
                         </li>
                         <li class="list-group-item list-group-item-success">Ocio:<br><span id="ocio"></span></li>
                         <li class="list-group-item list-group-item-warning">Alimentación:<br><span
                                 id="alimentacion"></span></li>
                         <li class="list-group-item list-group-item-info">Ahorro:<br><span id="ahorro"></span></li>
-                    </ul>
+                        </div>
+                    </ul> -->
 
                 </div>
                 <div class="col">
-                    <ul class="list-group">
-                        <li id="splurge" class="list-group-item">Derroche:<br><span id="splurge"></span></li>
-                    </ul>
+                    <div class="card text-dark bg-info mb-3" style="width: 15rem; height: 18rem;">
+                        <div class="card-body">
+                          <h5 class="card-title">Derroche</h5>
+                          <span id="splurge" class="card-title"></span>
+
+                          <p class="card-text">Representa un %10 de tus ingresos. Este dinero esta destinado para salidas y ocio.</p>
+                          <a href="#" class="btn btn-primary" style="margin-top: 50px">Go somewhere</a>
+                        </div>
+                      </div>
+                    <!-- <ul class="list-group">
+                        <li class="list-group-item">Derroche:<br><span id="splurge"></span></li>
+                    </ul> -->
                 </div>
                 <div class="col">
-                    <ul class="list-group">
-                        <li id="smile" class="list-group-item">Sonrisas:<br><span id="smile"></span></li>
-                    </ul>
+                    <div class="card text-dark bg-warning mb-3" style="width: 15rem; height: 18rem;">
+                        <div class="card-body">
+                          <h5 class="card-title">Sonrisas</h5>
+                          <span id="smile" class="card-title"></span>
+
+                          <p class="card-text">Otro %10 de tu sueldo, destinado a ahorro a mediano/largo plazo (vacaciones, compras)</p>
+                          <a href="#" class="btn btn-primary" style="margin-top: 50px">Go somewhere</a>
+                        </div>
+                      </div>
+                    <!-- <ul class="list-group">
+                        <li class="list-group-item">Sonrisas:<br><span id="smile"></span></li>
+                    </ul> -->
                 </div>
                 <div class="col">
-                    <ul class="list-group">
-                        <li id="fire-ext" class="list-group-item">Emergencias:<br><span id="fire-ext"></span></li>
-                    </ul>
+                    <div class="card text-white bg-danger mb-3" style="width: 15rem; height: 18rem;">
+                        <div class="card-body">
+                          <h5 class="card-title">Mata Fuegos</h5>
+                          <span id="fire-ext" class="card-title"></span>
+
+                          <p class="card-text">El objetivo de esta cuenta es tener %20 del sueldo para apagar fuegos financieros.</p>
+                          <a href="#" class="btn btn-primary" style="margin-top: 50px">Go somewhere</a>
+                        </div>
+                      </div>
+           <!--          <ul class="list-group">
+                        <li class="list-group-item">Emergencias:<br><span id="fire-ext"></span></li>
+                    </ul> -->
                 </div>
             </div>
         </div>
+        </form>
     </div>
     <script scr="node_modules\bootstrap\dist\css\bootstrap-grid.css"></script>
     <script type="text/javascript" src="gastos.js"></script>
