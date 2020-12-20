@@ -1,4 +1,4 @@
-const $boton = document.querySelector("[type=submit]");
+const $boton = document.querySelector("#dale");
 const $menu = document.querySelector("#principal")
 const $form = document.querySelector("#calculos");
 let $daily = document.querySelector("#daily-expenses");
